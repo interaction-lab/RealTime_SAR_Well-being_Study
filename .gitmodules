@@ -1,0 +1,3 @@
+[submodule "blossom-public"]
+	path = blossom-public
+	url = https://github.com/interaction-lab/blossom-public.git

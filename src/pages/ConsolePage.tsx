@@ -238,6 +238,13 @@ export function ConsolePage() {
       await client.cancelResponse(trackId, offset);
     }
     await wavRecorder.record((data) => client.appendInputAudio(data.mono));
+    //MISHA START EDIT
+    fetch('http://localhost:5000/receive_data', { method: 'POST', headers: { 'Content-Type': 'application/json', },
+        body: JSON.stringify({ type: 'listen', 
+          data: "start listening", }), 
+      }).catch((error) => console.error('Error sending response done:', error)); 
+
+    //MISHA END EDIT
   };
 
   /**
@@ -249,6 +256,14 @@ export function ConsolePage() {
     const wavRecorder = wavRecorderRef.current;
     await wavRecorder.pause();
     client.createResponse();
+
+    //MISHA START EDIT
+    fetch('http://localhost:5000/receive_data', { method: 'POST', headers: { 'Content-Type': 'application/json', },
+        body: JSON.stringify({ type: 'stop', 
+          data: "stop listening", }), 
+      }).catch((error) => console.error('Error sending response done:', error)); 
+
+    //MISHA END EDIT
   };
 
   /**
@@ -455,19 +470,55 @@ export function ConsolePage() {
       }
     );
 
+    // // handle realtime events from client + server for event logging
+    // client.on('realtime.event', (realtimeEvent: RealtimeEvent) => {
+    //   setRealtimeEvents((realtimeEvents) => {
+    //     const lastEvent = realtimeEvents[realtimeEvents.length - 1];
+    //     if (lastEvent?.event.type === realtimeEvent.event.type) {
+    //       // if we receive multiple events in a row, aggregate them for display purposes
+    //       lastEvent.count = (lastEvent.count || 0) + 1;
+    //       return realtimeEvents.slice(0, -1).concat(lastEvent);
+    //     } else {
+    //       return realtimeEvents.concat(realtimeEvent);
+    //     }
+    //   });
+    // });
+    
+    //START MISHA EDIT
     // handle realtime events from client + server for event logging
-    client.on('realtime.event', (realtimeEvent: RealtimeEvent) => {
-      setRealtimeEvents((realtimeEvents) => {
-        const lastEvent = realtimeEvents[realtimeEvents.length - 1];
-        if (lastEvent?.event.type === realtimeEvent.event.type) {
-          // if we receive multiple events in a row, aggregate them for display purposes
-          lastEvent.count = (lastEvent.count || 0) + 1;
-          return realtimeEvents.slice(0, -1).concat(lastEvent);
-        } else {
-          return realtimeEvents.concat(realtimeEvent);
-        }
-      });
-    });
+client.on('realtime.event', (realtimeEvent: RealtimeEvent) => {
+  if(realtimeEvent.event.type === 'response.content_part.added'){
+    console.log("first response.audio.delta");
+    fetch('http://localhost:5000/receive_data', { method: 'POST', headers: { 'Content-Type': 'application/json', },
+        body: JSON.stringify({ type: 'start', 
+          data: "start speaking", }), 
+      }).catch((error) => console.error('Error sending response done:', error)); 
+    // firstAudioDeltaReceived = true;
+  } else if (realtimeEvent.event.type === 'response.done') {
+      fetch('http://localhost:5000/receive_data', { method: 'POST', headers: { 'Content-Type': 'application/json', },
+        body: JSON.stringify({ type: 'tokens', 
+          data: realtimeEvent.event.response.usage.output_token_details.audio_tokens, }), 
+      }).catch((error) => console.error('Error sending response done:', error)); 
+      console.log(realtimeEvent.event);
+      console.log(realtimeEvent.event.response.usage.output_token_details.audio_tokens);
+  }
+        
+
+  setRealtimeEvents((realtimeEvents) => {
+    const lastEvent = realtimeEvents[realtimeEvents.length - 1];
+    if (lastEvent?.event.type === realtimeEvent.event.type) {
+      // if we receive multiple events in a row, aggregate them for display purposes
+      lastEvent.count = (lastEvent.count || 0) + 1;
+      return realtimeEvents.slice(0, -1).concat(lastEvent);
+    } else {
+      return realtimeEvents.concat(realtimeEvent);
+    }
+  });
+});
+
+//END MISHA EDIT
+
+
     client.on('error', (event: any) => console.error(event));
     client.on('conversation.interrupted', async () => {
       const trackSampleOffset = await wavStreamPlayer.interrupt();

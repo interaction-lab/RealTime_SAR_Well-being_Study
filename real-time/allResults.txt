@@ -1,0 +1,112 @@
+1. A two-sided one-sample Wilcoxon test is used to find if there is a significance differnce betwee
+4 (neutral) on the likheart scale and the median of the users' responses
+
+H1:
+Turn-taking feels natural (N = 11): M = 5.45, SEM = 0.34, SD = 1.13, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 63.000, T⁻ = 0.000, z = 2.886, p = 0.004 (2-tailed), r = 0.870
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H2(a):
+Movements sync with conversation (N = 11): M = 4.82, SEM = 0.42, SD = 1.40, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 47.500, T⁻ = 8.500, z = 1.534, p = 0.125 (2-tailed), r = 0.463
+There is no statistically significant difference from 4 at the α = 0.05 level.
+
+H2(b):
+Robot actively listens (N = 11): M = 5.82, SEM = 0.35, SD = 1.17, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 63.000, T⁻ = 0.000, z = 2.886, p = 0.004 (2-tailed), r = 0.870
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H3:
+Content of responses adapted to inputs (N = 11): M = 5.82, SEM = 0.46, SD = 1.54, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 61.000, T⁻ = 5.000, z = 2.584, p = 0.010 (2-tailed), r = 0.779
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H4(a):
+Voice suited for wellbeing coach (N = 11): M = 5.27, SEM = 0.38, SD = 1.27, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 58.500, T⁻ = 4.500, z = 2.335, p = 0.020 (2-tailed), r = 0.704
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H4(b):
+Tone and emotions adapted (N = 11): M = 4.82, SEM = 0.54, SD = 1.78, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 49.500, T⁻ = 16.500, z = 1.372, p = 0.170 (2-tailed), r = 0.414
+There is no statistically significant difference from 4 at the α = 0.05 level.
+
+H5(a):
+Comfortable sharing emotions (N = 11): M = 6.09, SEM = 0.28, SD = 0.94, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 65.000, T⁻ = 0.000, z = 3.097, p = 0.002 (2-tailed), r = 0.934
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H5(b):
+Comfortable sharing personal experiences (N = 11): M = 6.09, SEM = 0.34, SD = 1.14, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 65.000, T⁻ = 1.000, z = 3.097, p = 0.002 (2-tailed), r = 0.934
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H5(c):
+Satisfied with robot's response (N = 11): M = 5.64, SEM = 0.47, SD = 1.57, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 59.500, T⁻ = 5.500, z = 2.418, p = 0.016 (2-tailed), r = 0.729
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H5(d):
+Robot seems empathetic (N = 11): M = 5.73, SEM = 0.41, SD = 1.35, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 62.000, T⁻ = 3.000, z = 2.660, p = 0.008 (2-tailed), r = 0.802
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H5(e):
+Talking with robot feels positive (N = 11): M = 6.00, SEM = 0.30, SD = 1.00, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 65.000, T⁻ = 0.000, z = 3.097, p = 0.002 (2-tailed), r = 0.934
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+H5(f):
+Robot helps appreciate things in life (N = 11): M = 6.00, SEM = 0.45, SD = 1.48, Median = 7.00
+Wilcoxon signed-rank test: T⁺ = 62.000, T⁻ = 3.000, z = 2.660, p = 0.008 (2-tailed), r = 0.802
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+
+Robot is socially intelligent (N = 11): M = 5.55, SEM = 0.28, SD = 0.93, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 65.000, T⁻ = 0.000, z = 3.097, p = 0.002 (2-tailed), r = 0.934
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+Robot is emotionally intelligent (N = 11): M = 5.09, SEM = 0.37, SD = 1.22, Median = 5.00
+Wilcoxon signed-rank test: T⁺ = 57.000, T⁻ = 9.000, z = 2.154, p = 0.031 (2-tailed), r = 0.649
+There is statistically significant difference from 4 at the α = 0.05 level.
+
+
+
+2. B/c the same parcipiants filled out the pre-post surveys, a 2-sided Wilcoxon signed-rank test:
+Data
+Gratitude:
+Sample 1 (N = 11): M = 3.73, SEM = 0.27, SD = 0.91, Median = 4.00
+Sample 2 (N = 11): M = 4.27, SEM = 0.20, SD = 0.65, Median = 4.00
+Wilcoxon signed-rank test: T⁺ = 0.000, T⁻ = 15.000, z = 2.121, p = 0.034 (2-tailed), r = –0.452
+There is a statistically significant difference between Sample 1 and Sample 2 at α = 0.05.
+
+Thankfulness
+Sample 1 (N = 11): M = 3.64, SEM = 0.28, SD = 0.92, Median = 4.00
+Sample 2 (N = 11): M = 4.27, SEM = 0.24, SD = 0.79, Median = 4.00
+Wilcoxon signed-rank test: T⁺ = 0.000, T⁻ = 15.000, z = 2.121, p = 0.034 (2-tailed), r = –0.452
+There is a statistically significant difference between Sample 1 and Sample 2 at the α = 0.05 level.
+
+Appreciation:
+Sample 1 (N = 11): M = 3.73, SEM = 0.24, SD = 0.79, Median = 4.00
+Sample 2 (N = 11): M = 4.36, SEM = 0.20, SD = 0.67, Median = 4.00
+Wilcoxon signed-rank test: T⁺ = 0.000, T⁻ = 15.000, z = 2.070, p = 0.038 (2-tailed), r = –0.441
+There is a statistically significant difference between Sample 1 and Sample 2 at the α = 0.05 level.
+
+
+General Appreication
+Sample 1 (N = 7): M = 5.49, SEM = 0.27, SD = 0.70, Median = 5.73
+Sample 2 (N = 7): M = 5.86, SEM = 0.17, SD = 0.44, Median = 6.00
+Wilcoxon signed-rank test: T⁺ = 0.000, T⁻ = 21.000, z = 2.207, p = 0.027 (2-tailed), r = –0.590
+There is a statistically significant difference between Sample 1 and Sample 2 at the α = 0.05 level.
+
+
+Life Satisfaction
+Sample 1 (N = 11): M = 4.24, SEM = 0.36, SD = 1.20, Median = 3.80
+Sample 2 (N = 11): M = 4.86, SEM = 0.35, SD = 1.16, Median = 4.80
+Wilcoxon signed-rank test: T⁺ = 5.000, T⁻ = 50.000, z = 2.295, p = 0.022 (2-tailed), r = –0.489
+There is a statistically significant difference between Sample 1 and Sample 2 at the α = 0.05 level.
+
+
+
+
+

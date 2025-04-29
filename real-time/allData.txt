@@ -1,0 +1,97 @@
+
+# Data for pre-test and post-test (Gratitude metrics)
+pre_test_gratitude = np.array([
+    [2, 2, 3],
+    [3, 3, 3],
+    [4, 4, 4],
+    [4, 4, 4],
+    [4, 4, 4],
+    [3, 3, 3],
+    [5, 5, 5],
+    [3, 3, 3],
+    [5, 5, 5],
+    [4, 3, 3],
+    [4, 4, 4]
+])
+#1. first number of each entry in the above array (grateful)
+#2. second number of each entry in the above array (appreciative)
+#3. third number of each entry in the above array (thankful???)
+#1.   2, 3, 4, 4, 4, 3, 5, 3, 5, 4, 4
+#2.   2, 3, 4, 4, 4, 3, 5, 3, 5, 3, 4
+#3.   3, 3, 4, 4, 4, 3, 5, 3, 5, 3, 4
+
+post_test_gratitude = np.array([
+    [4, 5, 5],
+    [4, 3, 4],
+    [5, 5, 5],
+    [5, 5, 4],
+    [4, 4, 4],
+    [4, 3, 3],
+    [5, 5, 5],
+    [3, 4, 4],
+    [5, 5, 5],
+    [4, 4, 5],
+    [4, 4, 4]
+])
+
+#1. first number of each entry in the above array (grateful)
+#2. second number of each entry in the above array (appreciative)
+#3. third number of each entry in the above array (thankful???)
+#1.  4, 4, 5, 5, 4, 4, 5, 3, 5, 4, 4
+#2.  5, 3, 5, 5, 4, 3, 5, 4, 5, 4, 4
+#3.  5, 4, 5, 4, 4, 3, 5, 4, 5, 5, 4
+
+# Data for pre-test and post-test (Life Satisfaction metrics)
+pre_test_life = np.array([
+    [6, 6, 7, 6, 7],
+    [3, 6, 5, 3, 2],
+    [4, 4, 4, 3, 3],
+    [5, 6, 6, 3, 2],
+    [6, 5, 6, 5, 2],
+    [3, 5, 3, 2, 2],
+    [5, 7, 4, 6, 7],
+    [4, 4, 4, 4, 2],
+    [5, 5, 5, 6, 5],
+    [2, 3, 3, 3, 2],
+    [4, 4, 3, 2, 4]
+])
+
+#take the means:
+#6.4, 3.8, 3.6, 4.4, 4.8, 3.0, 5.8, 3.6, 5.2, 2.6, 3.4
+
+post_test_life = np.array([
+    [6, 6, 7, 7, 7],
+    [3, 5, 5, 5, 3],
+    [5, 6, 5, 5, 3],
+    [5, 7, 6, 5, 2],
+    [6, 6, 6, 4, 2],
+    [3, 5, 2, 2, 2],
+    [7, 7, 7, 7, 7],
+    [4, 5, 5, 5, 2],
+    [5, 4, 6, 5, 5],
+    [4, 4, 4, 5, 3],
+    [6, 5, 6, 4, 4]
+])
+#6.6, 4.2, 4.8, 5.0, 4.8, 2.8, 7.0, 4.2, 5.0, 4.0, 5.0
+
+
+#general gratitude pre mean list: 5.82, 5.73, 5.36, 5.64, 6.18, 4.00, 5.73
+#general gratitude post mean list: 6.27, 6.18, 5.45, 5.82, 6.18, 5.09, 6.00
+
+
+#####{
+#     "Turn-taking feels natural": [5, 5, 7, 4, 4, 5, 7, 7, 6, 5, 5],
+#     "Robot actively listens": [6, 4, 7, 7, 5, 4, 5, 6, 7, 6, 7],
+#     "Movements sync with conversation": [4, 5, 7, 6, 4, 4, 6, 2, 4, 5, 6],
+#     "Content of responses adapted to inputs": [5, 2, 7, 5, 7, 5, 6, 7, 7, 6, 7],
+#     "Voice suited for wellbeing coach": [4, 6, 7, 5, 3, 4, 6, 5, 5, 6, 7],
+#     "Tone and emotions adapted": [3, 3, 7, 5, 3, 2, 6, 7, 5, 6, 6],
+#     "Comfortable sharing emotions": [6, 6, 7, 5, 7, 4, 7, 6, 6, 7, 6],
+#     "Comfortable sharing personal experiences": [6, 6, 7, 6, 7, 3, 7, 6, 6, 6, 7],
+#     "Satisfied with robot's response": [4, 5, 7, 6, 5, 2, 6, 6, 7, 7, 7],
+#     "Robot seems empathetic": [5, 4, 7, 6, 5, 3, 7, 7, 6, 7, 6],
+#     "Talking with robot feels positive": [5, 6, 7, 5, 6, 4, 7, 6, 6, 7, 7],
+#     "Robot is socially intelligent": [5, 5, 7, 6, 5, 4, 5, 5, 6, 6, 7],
+#     "Robot is emotionally intelligent": [5, 5, 7, 5, 5, 2, 5, 5, 6, 6, 5],
+#     "Robot helps appreciate things in life": [5, 3, 7, 4, 7, 5, 7, 7, 7, 7, 7]
+# }
